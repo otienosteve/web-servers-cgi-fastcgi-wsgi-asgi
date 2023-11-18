@@ -20,8 +20,17 @@ The Web server would receive a request from the client and pass it to the cgi sc
 
 CGI was a good first hack at generating dynamic content for clients on the web, but had a few drawbacks in it's architecture.   
 CGI was designed in such a way that for each request it would create a new process, process the request, give a response and then terminate th process. This was not very resource efficient as with multiple request many resources were created and terminated.   
-The time taken to process each request had a significant delay due to the creation of new process each time a request was received.     
-  
+The time taken to process each request had a significant delay due to the creation of new process each time a request was received.    
+
+### Fastcgi  
+The performance drawbacks of CGI led to the development of fastcgi which was a more efficient approach at request processing.  
+Unlike cgi that created a new process for each request. FastCGI uses a persistent process pool to handle incoming requests. This reduced the time taken to process a request as now instead of consuming some unit of time in process creation and termination with each incoming request, a process was always available to process the incoming  requests.    
+
+### More on web servers
+We mentioned in the introduction that a web server is a program that processes requests for web content from the client. There are different flavours of web server software from various vendors, examples include Apache, Nginx, IIS, Cherokee, Lighttpd. The different flavours imply differences in processing architecture and hence there will be significant differences in  one web server will pass requests to a web app and how another will.    
+This can pose as a challenge especially in terms of compatibility between web servers and web apps/web  frameworks.   
+
+
 
 
 
