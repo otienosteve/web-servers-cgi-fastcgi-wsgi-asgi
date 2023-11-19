@@ -33,8 +33,20 @@ This can pose as a challenge especially in terms of compatibility between web se
 A particular web framework/app may be designed to work well with a specific web server and porting it to a different web server may turn out to be a daunting task to developers.   
 As new programming languages and frameworks were innovated there was an increase in the number of programming languages used on the web and the burden of integration was left on the shoulders of web framework/app authors. You can imagine the chaos that resulted from this approach as the web apps/frameworks were opinionated on the choice of server to use with them.       
 There are some programming language/ framework authors that foresaw this challenge early enough and agreed on implementing a neutral specification and or api's to overcome this technical compatibility challenge, a perfect example would be the Java Servelet api of 1996 that later changed it's name to Jakarta Servelet in 2019. 
-... more info on Jakarta servelet needed.
-   
+... more info on Jakarta servelet needed.   
+
+### Python and the web server   
+In it's nascent years in web app development python left the job of coming up with a way to integrate your app/framework with the server to the framework/app author. This of course led to the development of technically incompatible frameworks from the context of the server. Your choice of framework had an underlying direct consequence in the available usable servers. In such complicated circumstances you can obviously tell that change required a lot of courage as it was tantamount to punishment. If you desired to change to a server that was not compatible with your web framework it meant you had to discard the framework and adopt another or refactor the web framework to work with your new choice of server.    
+Now, in the midst of such mirky circumstances a saviour was born.    
+Drumrolls.
+### WSGI (Web Server Gateway Interface)   
+The Web server Gateway Interface is a specification that describes how a server and an application written in python should communicate. It was released in YYYY under PEP33 and was revised in YYYY when Python 3 was released.    
+WSGI is not a framework, neither is it an api, it simply is a guideline for how the server and the app/framework should communicate.    
+WSGI is dual sided, it has a 
+
+
+
+
 
 
 
