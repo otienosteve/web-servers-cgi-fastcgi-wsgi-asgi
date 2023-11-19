@@ -37,12 +37,12 @@ There are some programming language/ framework authors that foresaw this challen
 
 ### Python and the web server   
 In it's nascent years in web app development python left the job of coming up with a way to integrate your app/framework with the server to the framework/app author. This of course led to the development of technically incompatible frameworks from the context of the server. Your choice of framework had an underlying direct consequence in the available usable servers. In such complicated circumstances you can obviously tell that change required a lot of courage as it was tantamount to punishment. If you desired to change to a server that was not compatible with your web framework it meant you had to discard the framework and adopt another or refactor the web framework to work with your new choice of server.    
-Now, in the midst of such mirky circumstances a saviour was born.    
-Drumrolls.
+Now, in the midst of this anarchy, a saviour was born.    
+Drumrolls 🥁🥁🥁.
 ### WSGI (Web Server Gateway Interface)   
 The Web server Gateway Interface is a specification that describes how a server and an application written in python should communicate. It was released in YYYY under PEP33 and was revised in YYYY when Python 3 was released.    
 WSGI is not a framework, neither is it an api, it simply is a guideline for how the server and the app/framework should communicate.    
-WSGI is dual sided, it has a 
+WSGI is dual sided, it has a a server side and the application side 
 
 
 
