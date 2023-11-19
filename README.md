@@ -53,7 +53,7 @@ WSGI is a spec and there are various implementations of it.
 Examples of software applications built to implement the WSGI spec are:
  - uWSGi
  - gunicorn
- - mod_wsgi
+ - mod_wsgi 
  There is also a web app library called Werkzeug that provides utilities for building WSGI compliant apps.  
  The Illustration below depicts the Interaction among the three.
  The web server, the wsgi implementation, the deployed app.     
@@ -69,6 +69,9 @@ Examples of software applications built to implement the ASGI spec are:
 - Magnum
 - Hypercorn 
 - Daphne 
+
+![Web-server-asgi-web-app illustration](./WEB_server-ASGI-Web-app.png)  
+
 
 
  
