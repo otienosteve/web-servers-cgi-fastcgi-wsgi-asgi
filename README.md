@@ -27,8 +27,15 @@ The performance drawbacks of CGI led to the development of fastcgi which was a m
 Unlike cgi that created a new process for each request. FastCGI uses a persistent process pool to handle incoming requests. This reduced the time taken to process a request as now instead of consuming some unit of time in process creation and termination with each incoming request, a process was always available to process the incoming  requests.    
 
 ### More on web servers
-We mentioned in the introduction that a web server is a program that processes requests for web content from the client. There are different flavours of web server software from various vendors, examples include Apache, Nginx, IIS, Cherokee, Lighttpd. The different flavours imply differences in processing architecture and hence there will be significant differences in  one web server will pass requests to a web app and how another will.    
-This can pose as a challenge especially in terms of compatibility between web servers and web apps/web  frameworks.   
+We mentioned in the introduction that a web server is a program that processes requests for web content from the client. It is important to note that there are different flavours of web server software from various vendors, examples include Apache, Nginx, IIS, Cherokee, Lighttpd. The different flavours imply differences in processing architecture and hence there will be significant differences in how one web server will pass requests to a web app and how another will.    
+This can pose as a challenge especially in terms of compatibility between web servers and web apps/web frameworks. consider the illustration below. 
+![Deploy app dilemma](./Deploy-app-dilemna-illustration.png) 
+A particular web framework/app may be designed to work well with a specific web server and porting it to a different web server may turn out to be a daunting task to developers.   
+As new programming languages and frameworks were innovated there was an increase in the number of programming languages used on the web and the burden of integration was left on the shoulders of web framework/app authors. You can imagine the chaos that resulted from this approach as the web apps/frameworks were opinionated on the choice of server to use with them.       
+There are some programming language/ framework authors that foresaw this challenge early enough and agreed on implementing a neutral specification and or api's to overcome this technical compatibility challenge, a perfect example would be the Java Servelet api of 1996 that later changed it's name to Jakarta Servelet in 2019. 
+... more info on Jakarta servelet needed.
+   
+
 
 
 
@@ -75,3 +82,11 @@ Icons and resources
 <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by pictranoosa - Flaticon</a>   
 <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by Hilmy Abiyyu A. - Flaticon</a>   
 <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Smashicons - Flaticon</a>   
+<a href="https://www.flaticon.com/free-icons/nginx" title="nginx icons">Nginx icons created by Freepik - Flaticon</a>   
+<a href="https://iconscout.com/icons/apache" class="text-underline font-size-sm" target="_blank">Apache</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>   
+<a href="https://branditechture.agency/brand-logos/" title="Microsoft IIS Logo icon">Microsoft IIS Logo - Free brand Logos </a>     
+<a href="https://branditechture.agency/brand-logos/" title="Lighttpd Logo icon"> Lighttpd Icon - Free brand Logos </a>  
+<a href="https://branditechture.agency/brand-logos/" title="Cherokee Logo icon"> Cherokee Icon - Cherokee Facebook Account </a>   
+<a href="https://www.flaticon.com/free-icons/source-code" title="source code icons">Source code icons created by Vectors Tank - Flaticon</a>    
+
+
