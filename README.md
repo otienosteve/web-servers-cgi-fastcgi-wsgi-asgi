@@ -42,17 +42,10 @@ Drumrolls 🥁🥁🥁.
 ### WSGI (Web Server Gateway Interface)   
 The Web server Gateway Interface is a specification that describes how a server and an application written in python should communicate. It was released in YYYY under PEP33 and was revised in YYYY when Python 3 was released.    
 WSGI is not a framework, neither is it an api, it simply is a guideline for how the server and the app/framework should communicate.    
-WSGI is dual sided, it has a a server side and the application side 
-
-
-
-
-
-
-
-
-
-
+WSGI is dual sided, it has a a server side and the application/framework side.  
+The server side takes care of receiving requests from the client and the framework/app side takes care of processing the requests received from the client.     
+This approach alleviates the web "app/framework" from the burden of taking care of how to communicate with a web server and leaves it only with the work of receiving requests and returning responses.   
+![Deployed app with WSGI](./Deployed_app_with_WSGI.png) 
 
 
 
@@ -78,12 +71,13 @@ WSGI is dual sided, it has a a server side and the application side
 
 
 [What is web content](https://en.wikipedia.org/wiki/Web_content)    
-[CGI Versus FastCGI versus WSGI](https://www.sobyte.net/post/2021-11/cgi-fastcgi-wsgi/)     
-[PEP-3333 - WSGI official docs](https://peps.python.org/pep-3333/#specification-details)    
 [How CGI Works](https://computer.howstuffworks.com/cgi.htm)     
-[Youtube (PowerCert Animated Videos)- What is A server](https://www.youtube.com/watch?v=UjCDWCeHCzY)    
+[CGI Versus FastCGI versus WSGI](https://www.sobyte.net/post/2021-11/cgi-fastcgi-wsgi/)     
+[WSGI- Wikipedia](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)      
 [What is WSGI -wsgi.readthedocs.io](https://wsgi.readthedocs.io/en/latest/what.html)    
 [WSGI - introduction](https://wsgi.tutorial.codepoint.net/intro)    
+[PEP-3333 - WSGI official docs](https://peps.python.org/pep-3333/#specification-details)    
+[Youtube (PowerCert Animated Videos)- What is A server](https://www.youtube.com/watch?v=UjCDWCeHCzY)    
 
 Icons and resources
 
