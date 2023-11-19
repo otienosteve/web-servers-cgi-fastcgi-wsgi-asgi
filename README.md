@@ -38,7 +38,8 @@ There are some programming language/ framework authors that foresaw this challen
 ### Python and the web server   
 In it's nascent years in web app development python left the job of coming up with a way to integrate your app/framework with the server to the framework/app author. This of course led to the development of technically incompatible frameworks from the context of the server. Your choice of framework had an underlying direct consequence in the available usable servers. In such complicated circumstances you can obviously tell that change required a lot of courage as it was tantamount to punishment. If you desired to change to a server that was not compatible with your web framework it meant you had to discard the framework and adopt another or refactor the web framework to work with your new choice of server.    
 Now, in the midst of this anarchy, a saviour was born.    
-Drumrolls 🥁🥁🥁.
+Drumrolls 🥁🥁🥁.   
+
 ### WSGI (Web Server Gateway Interface)   
 The Web server Gateway Interface is a specification that describes how a server and an application written in python should communicate. It was released in 2003 under PEP-333 and was revised in 2010 to PEP-3333 when Python 3 was released.    
 WSGI is not a framework, neither is it an api, it simply is a guideline for how the server and the app/framework should communicate.    
@@ -49,11 +50,19 @@ This approach alleviates the web "app/framework" from the burden of taking care 
 In essence WSGI is a calling convention.    
 The "application/framework" side provides a callable object(function, method, class, or instance with a __call__ method) to the server side. The callable object is aware of how and what parameters it should receive from the server side and what response it should provide to the server side. The server side part of WSGI takes care of the other details between it and the web server lying behind it.     
 WSGI is a spec and there are various implementations of it.  
-Examples of software applications built to support WSGI are:
+Examples of software applications built to implement the WSGI spec are:
  - uWSGi
  - gunicorn
  - mod_wsgi
  There is also a web app library called Werkzeug that provides utilities for building WSGI compliant apps.  
+ The Illustration below depicts the Interaction among the three.
+ The web server, the wsgi implementation, the deployed app.     
+
+ ![NGINX-WSGI-Deployed App Illustration](./Nginx-wsgi-app.png)  
+
+ WSGI is a 
+
+ 
 
 
 
@@ -101,5 +110,8 @@ Icons and resources
 <a href="https://branditechture.agency/brand-logos/" title="Lighttpd Logo icon"> Lighttpd Icon - Free brand Logos </a>  
 <a href="https://branditechture.agency/brand-logos/" title="Cherokee Logo icon"> Cherokee Icon - Cherokee Facebook Account </a>   
 <a href="https://www.flaticon.com/free-icons/source-code" title="source code icons">Source code icons created by Vectors Tank - Flaticon</a>    
+<a href="https://seeklogo.com/vector-logo/393096/uwsgi" title=" uWSGI icon">uWSGI logo - Seek Logo</a>   
+<a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Smashicons - Flaticon</a>  
+
 
 
