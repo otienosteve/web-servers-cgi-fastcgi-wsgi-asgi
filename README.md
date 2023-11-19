@@ -63,7 +63,8 @@ Examples of software applications built to implement the WSGI spec are:
  ### ASGI
 As has been mentioned earlier WSGI was introduced in PEP-333 in 2003 and revised to PEP-3333 in 2010 with the introduction of python 3. Python is a constantly evolving to adopt new features, after PEP-3333 more features were added to python including asynchronous programming. Asynchronous programming is a way of executing programs in which the order of execution does not matter in contrast to synchronous programming in which order matters.     
 If there are 4 tasks to be performed. If it is done synchronously where order matters then execution will move from task 1, then task 2 and so on until task 4. On the contrast if execution is done asynchronously then execution can start with task 1, then pause with task 2 if there there is a factor preventing the task from completion and move on task 3 and 4 then go back to task 2. The Key takeaway is that with synchronous programming Order of execution matters while with asynchronous order does not matter.    
-WSGI was designed to work with synchronous python apps. But as python evolved and introduced asynchronous programming applications started being written the asynchronously. 
+WSGI was designed to work with synchronous python apps. But as python evolved and introduced asynchronous programming applications started being written asynchronously which WSGI could not support. This led to the development of ASGI (Asynchronous  Server Gateway Interface) which took after WSGI by providing a common specification for how async capable python web apps could communicate with web servers.  
+
  
 
 
